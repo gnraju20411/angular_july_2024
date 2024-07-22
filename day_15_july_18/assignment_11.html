@@ -1,0 +1,23 @@
+<body>
+    <script>
+        var employees = [{eId: 101, name: "nagaraju"}];
+
+        function varCount(str1)
+        {
+            var arr1 = str1.split('');
+            for(let i = 0; i<arr1.length;i++)
+            {
+                charCount = 0;
+                for(let j = 1;j<arr1.length-1;j++)
+                {
+                    if(arr1[i] == arr1[j])
+                    {
+                        charCount++;
+                    }
+                }
+                console.log(arr1[i] + ' :' + charCount);
+            }
+        }
+        varCount(test);
+    </script>
+</body>

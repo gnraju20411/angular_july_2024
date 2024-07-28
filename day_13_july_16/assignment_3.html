@@ -1,0 +1,17 @@
+<script>
+    var str1 = 'this is javascript class';
+    var strlen = str1.length;
+    var arr = str1.split(' ');
+    var count = 0;
+    var res = '';
+    var result = '';
+    for (var i = 0; i < arr.length; i++)
+    {
+        var test = arr[i];
+        var val = test.charCodeAt(0)-32;
+        var char = String.fromCharCode(val);
+        test = test.replace(test[0], char);
+        result = result + ' ' + test;
+    }
+    console.log("res:" + result);
+</script>

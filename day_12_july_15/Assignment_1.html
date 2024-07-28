@@ -1,0 +1,25 @@
+<body>
+    <button onclick="incrementCount()">Increment</button>
+    <button onclick="decrementCount()">Decrement</button>
+    <button onclick="reset()">Reset</button>
+    <h1>Count Value:: <span>0</span></h1>
+    <script>
+        function initializeCount() {
+            var count = 0;
+            return {
+                incre: function() {
+                    count++;
+                    document.querySelector('span').innerText = count;
+                },
+                decre: function() {
+                    count--;
+                    document.querySelector('span').innerText = count;
+                }
+            }
+        }
+        // let incrementCount = initializeCount();
+        // console.log(incrementCount);
+        // console.dir(incrementCount);
+    </script>
+
+</body>
